@@ -1,2 +1,3 @@
 #!/bin/bash
-nl -ba | awk "NR%2==1 {print \$2}"
+printf "
+" $(cat -n | grep "^\s*[13579][^0-9]" | cut -f2-)
